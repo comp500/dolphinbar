@@ -28,6 +28,8 @@ module.exports.scanWiimotes = function () {
 		let wiimote = new Wiimote(pathList[i]);
 		if (wiimote.testConnection()) {
 			wiimoteList.push(wiimote);
+		} else {
+			wiimote.close();
 		}
 	}
 	return wiimoteList;
