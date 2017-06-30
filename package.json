@@ -1,0 +1,14 @@
+{
+  "name": "dolphinbar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "comp500",
+  "license": "MIT",
+  "dependencies": {
+    "node-hid": "^0.5.4"
+  }
+}
