@@ -30,7 +30,7 @@ module.exports.getDolphinBarDevices = function () {
 	return dolphinBar;
 };
 
-module.exports.scanWiimotes = function (timeoutSec) {
+module.exports.scanWiimotes = function () {
 	let pathList = module.exports.getDolphinBarDevices();
 	let wiimoteList = [];
 	for (let i = 0; i < pathList.length; i++) {
