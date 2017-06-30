@@ -2,18 +2,9 @@ const HID = require("node-hid");
 const vendorID = 1406; // Nintendo vendorID
 const productID = 774; // Wiimote productID
 
-module.exports = {};
+const Wiimote = require("./lib/wiimote.js");
 
-class Wiimote extends HID.HID {
-	testConnection() {
-		try {
-			this.write([0x15]);
-			return true;
-		} catch (e) {
-			return false;
-		}
-	}
-};
+module.exports = {};
 
 module.exports.getHIDDevices = function () {
 	return HID.devices();
